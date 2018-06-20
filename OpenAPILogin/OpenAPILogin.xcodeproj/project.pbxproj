@@ -13,9 +13,12 @@
 		2252613B20DA9FF6002E486C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2252613A20DA9FF6002E486C /* Assets.xcassets */; };
 		2252613E20DA9FF6002E486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252613C20DA9FF6002E486C /* LaunchScreen.storyboard */; };
 		2252614820DAA04E002E486C /* Naver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252614720DAA04E002E486C /* Naver.storyboard */; };
+		3BB69AA220DAD3D10077A5B9 /* FaceBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB69AA120DAD3D10077A5B9 /* FaceBookViewController.swift */; };
+		7BDCEF78CA884092A75D2959 /* Pods_OpenAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2821D08F0DB9490344A73 /* Pods_OpenAPILogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01163E2DBFAF58442D1C733C /* Pods-OpenAPILogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPILogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin.release.xcconfig"; sourceTree = "<group>"; };
 		2252613020DA9FF5002E486C /* OpenAPILogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAPILogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2252613320DA9FF5002E486C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2252613520DA9FF5002E486C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		2252613D20DA9FF6002E486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2252613F20DA9FF6002E486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2252614720DAA04E002E486C /* Naver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Naver.storyboard; sourceTree = "<group>"; };
+		3BB69AA120DAD3D10077A5B9 /* FaceBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookViewController.swift; sourceTree = "<group>"; };
+		61078E737ACE671EE3080CF2 /* Pods-OpenAPILogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPILogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F2821D08F0DB9490344A73 /* Pods_OpenAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDCEF78CA884092A75D2959 /* Pods_OpenAPILogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				2252613220DA9FF5002E486C /* OpenAPILogin */,
 				2252613120DA9FF5002E486C /* Products */,
+				7EA27674FD065CE42267E067 /* Pods */,
+				D3BACB0432481ACD3C8164ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2252613720DA9FF5002E486C /* Main.storyboard */,
+				3BB69AA120DAD3D10077A5B9 /* FaceBookViewController.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -83,6 +93,23 @@
 			path = Naver;
 			sourceTree = "<group>";
 		};
+		7EA27674FD065CE42267E067 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61078E737ACE671EE3080CF2 /* Pods-OpenAPILogin.debug.xcconfig */,
+				01163E2DBFAF58442D1C733C /* Pods-OpenAPILogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3BACB0432481ACD3C8164ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2821D08F0DB9490344A73 /* Pods_OpenAPILogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2252614220DA9FF6002E486C /* Build configuration list for PBXNativeTarget "OpenAPILogin" */;
 			buildPhases = (
+				E5EAC89F0DFCDE2F8029CB87 /* [CP] Check Pods Manifest.lock */,
 				2252612C20DA9FF5002E486C /* Sources */,
 				2252612D20DA9FF5002E486C /* Frameworks */,
 				2252612E20DA9FF5002E486C /* Resources */,
+				92C5A313FBEAC3577CAF7FF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +180,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92C5A313FBEAC3577CAF7FF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5EAC89F0DFCDE2F8029CB87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenAPILogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2252612C20DA9FF5002E486C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -158,6 +234,7 @@
 			files = (
 				2252613620DA9FF5002E486C /* ViewController.swift in Sources */,
 				2252613420DA9FF5002E486C /* AppDelegate.swift in Sources */,
+				3BB69AA220DAD3D10077A5B9 /* FaceBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +375,7 @@
 		};
 		2252614320DA9FF6002E486C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61078E737ACE671EE3080CF2 /* Pods-OpenAPILogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +390,7 @@
 		};
 		2252614420DA9FF6002E486C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01163E2DBFAF58442D1C733C /* Pods-OpenAPILogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
