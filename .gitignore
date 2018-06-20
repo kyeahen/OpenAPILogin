@@ -113,4 +113,7 @@ fastlane/test_output
 /*.gcno
 
 
+#/*
+#!OpenAPILogin/OpenAPILogin/Facebook
+
 # End of https://www.gitignore.io/api/xcode,swift,macos,cocoapods
