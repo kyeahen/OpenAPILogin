@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NaverThirdPartyLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //네이버 로그인
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+        instance?.isInAppOauthEnable = true // 네이버 앱이 설치되어있다면 네이버 앱을 통해 인증
+        instance?.isNaverAppOauthEnable = true // 네이버 앱이 없다면 사파리를 통해 인증. 앱 인증과 사파리 인증이 둘 다 활성화되어 있다면 네이버 앱이 있는지 먼저 검사를 한 후 네이버 앱이 있다면 네이버 앱으로, 없다면 사파리를 통해 인증을 진행
+        instance?.isOnlyPortraitSupportedInIphone() // 인증 화면을 세로 모드에서만 진행하는 코드
+        // NaverThirdPartyConstantsForApp.h 파일에서 명시해준 URL Scheme과 클라이언트 ID, Secret, 앱 이름을 할당
+        instance?.serviceUrlScheme = kServiceAppUrlScheme
+        instance?.consumerKey = kConsumerKey
+        instance?.consumerSecret = kConsumerSecret
+        instance?.appName = kServiceAppName
         return true
     }
 
