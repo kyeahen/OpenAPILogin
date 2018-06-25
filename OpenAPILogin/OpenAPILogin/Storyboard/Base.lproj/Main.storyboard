@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="keC-xy-pJS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenAPILogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="210"/>
+        </scene>
+        <!--Naver Login View Controller-->
+        <scene sceneID="cZw-WB-Skx">
+            <objects>
+                <viewController storyboardIdentifier="NaverLoginViewController" id="keC-xy-pJS" customClass="NaverLoginViewController" customModule="OpenAPILogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yNA-vK-Ru9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NL-KF-Tuk">
+                                <rect key="frame" x="16" y="20" width="52" height="30"/>
+                                <state key="normal" title="로그아웃">
+                                    <color key="titleColor" red="0.119694046" green="0.54426408680000005" blue="0.15863493910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="keC-xy-pJS" eventType="touchUpInside" id="FAc-Ns-mvs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agw-Ue-v8L">
+                                <rect key="frame" x="264" y="20" width="95" height="30"/>
+                                <state key="normal" title="네이버로 로그인">
+                                    <color key="titleColor" red="0.119694046" green="0.54426408680000005" blue="0.15863493910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="naverLoginAction:" destination="keC-xy-pJS" eventType="touchUpInside" id="nX7-Jy-Ldi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dqq-wm-CqL">
+                                <rect key="frame" x="137" y="178" width="100" height="311.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2AT-ZX-y0L">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="kMn-1d-QHQ"/>
+                                            <constraint firstAttribute="width" secondItem="2AT-ZX-y0L" secondAttribute="height" multiplier="1:1" id="nC9-AW-JME"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNs-2D-uwh">
+                                        <rect key="frame" x="29" y="150" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qak-sa-O4x">
+                                        <rect key="frame" x="29" y="220.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrx-9J-dPr">
+                                        <rect key="frame" x="29" y="291" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="agw-Ue-v8L" firstAttribute="top" secondItem="BUR-Vh-HWp" secondAttribute="top" id="6yP-BE-5nw"/>
+                            <constraint firstItem="dqq-wm-CqL" firstAttribute="centerX" secondItem="BUR-Vh-HWp" secondAttribute="centerX" id="MkB-yM-bqf"/>
+                            <constraint firstItem="4NL-KF-Tuk" firstAttribute="leading" secondItem="BUR-Vh-HWp" secondAttribute="leading" constant="16" id="WRK-7e-QdS"/>
+                            <constraint firstItem="dqq-wm-CqL" firstAttribute="centerY" secondItem="BUR-Vh-HWp" secondAttribute="centerY" constant="-9.75" id="YVe-3e-Keb"/>
+                            <constraint firstItem="4NL-KF-Tuk" firstAttribute="top" secondItem="BUR-Vh-HWp" secondAttribute="top" id="YgS-l2-D3U"/>
+                            <constraint firstItem="BUR-Vh-HWp" firstAttribute="trailing" secondItem="agw-Ue-v8L" secondAttribute="trailing" constant="16" id="xqE-j3-js8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BUR-Vh-HWp"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthLabel" destination="Qak-sa-O4x" id="Qch-G3-bcC"/>
+                        <outlet property="emailLabel" destination="qrx-9J-dPr" id="gaX-8G-ihI"/>
+                        <outlet property="logoutBtn" destination="4NL-KF-Tuk" id="yFe-kd-vH0"/>
+                        <outlet property="nameLabel" destination="pNs-2D-uwh" id="0Nd-KU-eE6"/>
+                        <outlet property="naverLoginBtn" destination="agw-Ue-v8L" id="N6W-tu-6UZ"/>
+                        <outlet property="profileImageView" destination="2AT-ZX-y0L" id="C5J-y4-HTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSY-NQ-X5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="-611"/>
+        </scene>
+    </scenes>
+</document>

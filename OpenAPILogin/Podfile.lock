@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.7.2)
+  - Kingfisher (4.7.0)
   - naveridlogin-sdk-ios (4.0.9)
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
   - naveridlogin-sdk-ios
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - naveridlogin-sdk-ios
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   naveridlogin-sdk-ios: 16d901a8a3120f84432088e68dd8306e7030c3cb
 
-PODFILE CHECKSUM: 007b6114b7362091313a175ecb25f8d601a312b2
+PODFILE CHECKSUM: 26c62f9bbeb7187e72965339e0ca2976e00a1f7d
 
 COCOAPODS: 1.5.3

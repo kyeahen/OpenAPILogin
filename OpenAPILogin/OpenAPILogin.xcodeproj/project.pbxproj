@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222B5D4920E0D15C003F0A8C /* NaverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B5D4820E0D15C003F0A8C /* NaverLoginViewController.swift */; };
 		2230F4C1E51FDEADD679224A /* Pods_OpenAPILogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC046DA887006DE6AD61301 /* Pods_OpenAPILogin.framework */; };
 		2252613420DA9FF5002E486C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252613320DA9FF5002E486C /* AppDelegate.swift */; };
 		2252613620DA9FF5002E486C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2252613520DA9FF5002E486C /* ViewController.swift */; };
 		2252613920DA9FF5002E486C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252613720DA9FF5002E486C /* Main.storyboard */; };
 		2252613B20DA9FF6002E486C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2252613A20DA9FF6002E486C /* Assets.xcassets */; };
 		2252613E20DA9FF6002E486C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252613C20DA9FF6002E486C /* LaunchScreen.storyboard */; };
-		2252614820DAA04E002E486C /* Naver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2252614720DAA04E002E486C /* Naver.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CC046DA887006DE6AD61301 /* Pods_OpenAPILogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAPILogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5C9FA2BE4F843D649BE9E9 /* Pods-OpenAPILogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPILogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin.debug.xcconfig"; sourceTree = "<group>"; };
+		222B5D4820E0D15C003F0A8C /* NaverLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginViewController.swift; sourceTree = "<group>"; };
 		2252613020DA9FF5002E486C /* OpenAPILogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAPILogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2252613320DA9FF5002E486C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2252613520DA9FF5002E486C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		2252613A20DA9FF6002E486C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2252613D20DA9FF6002E486C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2252613F20DA9FF6002E486C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2252614720DAA04E002E486C /* Naver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Naver.storyboard; sourceTree = "<group>"; };
 		7768DC512CE55F7A112E7031 /* Pods-OpenAPILogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPILogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222B5D4A20E0D918003F0A8C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2252613720DA9FF5002E486C /* Main.storyboard */,
+				2252613C20DA9FF6002E486C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		2252612720DA9FF5002E486C = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				2252613320DA9FF5002E486C /* AppDelegate.swift */,
+				222B5D4A20E0D918003F0A8C /* Storyboard */,
 				2252614520DAA000002E486C /* Facebook */,
 				2252614620DAA021002E486C /* Naver */,
-				2252613520DA9FF5002E486C /* ViewController.swift */,
 				2252613A20DA9FF6002E486C /* Assets.xcassets */,
-				2252613C20DA9FF6002E486C /* LaunchScreen.storyboard */,
 				2252613F20DA9FF6002E486C /* Info.plist */,
 			);
 			path = OpenAPILogin;
@@ -77,7 +85,7 @@
 		2252614520DAA000002E486C /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				2252613720DA9FF5002E486C /* Main.storyboard */,
+				2252613520DA9FF5002E486C /* ViewController.swift */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -85,7 +93,7 @@
 		2252614620DAA021002E486C /* Naver */ = {
 			isa = PBXGroup;
 			children = (
-				2252614720DAA04E002E486C /* Naver.storyboard */,
+				222B5D4820E0D15C003F0A8C /* NaverLoginViewController.swift */,
 			);
 			path = Naver;
 			sourceTree = "<group>";
@@ -171,7 +179,6 @@
 				2252613E20DA9FF6002E486C /* LaunchScreen.storyboard in Resources */,
 				2252613B20DA9FF6002E486C /* Assets.xcassets in Resources */,
 				2252613920DA9FF5002E486C /* Main.storyboard in Resources */,
-				2252614820DAA04E002E486C /* Naver.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +211,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenAPILogin/Pods-OpenAPILogin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${PODS_ROOT}/naveridlogin-sdk-ios/NaverThirdPartyLogin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaverThirdPartyLogin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2252613620DA9FF5002E486C /* ViewController.swift in Sources */,
+				222B5D4920E0D15C003F0A8C /* NaverLoginViewController.swift in Sources */,
 				2252613420DA9FF5002E486C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
