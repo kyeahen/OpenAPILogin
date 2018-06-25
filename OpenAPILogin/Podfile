@@ -1,0 +1,9 @@
+
+platform :ios, '9.0'
+
+target 'OpenAPILogin' do
+    use_frameworks!
+    pod 'Alamofire'
+    pod 'naveridlogin-sdk-ios'
+
+end
